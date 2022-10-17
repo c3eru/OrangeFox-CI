@@ -2,16 +2,16 @@
 
 # Device
 export FOX_BRANCH="fox_12.1"
-export DT_LINK="$TW_TREE -b fox-12.1"
+export DT_LINK="$TW_TREE -b fox-s"
 
-export DEVICE="spes"
+export DEVICE="chime"
 export OEM="xiaomi"
 
 # Build Target
 ## "recoveryimage" - for A-Only Devices without using Vendor Boot
 ## "bootimage" - for A/B devices without recovery partition (and without vendor boot)
 ## "vendorbootimage" - for devices Using vendor boot for the recovery ramdisk (Usually for devices shipped with Android 12 or higher)
-export TARGET="bootimage"
+export TARGET="recoveryimage"
 
 export OUTPUT="OrangeFox*.zip"
 
